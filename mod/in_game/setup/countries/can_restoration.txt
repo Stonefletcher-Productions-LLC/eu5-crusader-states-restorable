@@ -1,0 +1,7 @@
+﻿CAN = {
+    color = rgb { 157 77 49 }
+    color2 = rgb { 241 235 220 }
+    culture_definition = norman
+    religion_definition = catholic
+    is_historic = no
+}

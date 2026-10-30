@@ -1,0 +1,5 @@
+﻿colors = {
+	# Formable map colours, matching the restored states' setup colours.
+	map_restoration_CTP = rgb { 174 49 56 }
+	map_restoration_CAN = rgb { 157 77 49 }
+}

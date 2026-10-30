@@ -1,0 +1,9 @@
+﻿l_english:
+ restoration_crusade.1.title: "The Crowns of Outremer"
+ restoration_crusade.1.desc: "The crusade is won. Our banners fly once more over the old seats of the crusader kings, and the faithful of Christendom ask what we will make of the victory.\n\nThe Kingdom of Jerusalem, the County of Tripoli and the Principality of Antioch fell long ago, but their names were never forgotten. We could raise them again, or keep these lands for our own crown."
+ restoration_crusade.1.a: "Restore them under the protection of the Holy See."
+ restoration_crusade.1.a.tt: "Every crusader state whose seat we hold is restored from the lands we hold there, as a Catholic monarchy and a Crusader State of the Papal States. We lose our cores on those lands."
+ restoration_crusade.1.b: "Restore them as our own vassals."
+ restoration_crusade.1.b.tt: "Every crusader state whose seat we hold is restored from the lands we hold there, as a Catholic monarchy and our vassal. We lose our cores on those lands."
+ restoration_crusade.1.c: "These lands belong to our crown."
+ restoration_crusade.1.c.tt: "We keep the conquered lands. As a crusade veteran we can still form Jerusalem, Tripoli or Antioch ourselves for the next 50 years."

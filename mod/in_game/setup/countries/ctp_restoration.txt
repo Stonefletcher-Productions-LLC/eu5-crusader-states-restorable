@@ -1,0 +1,7 @@
+﻿CTP = {
+    color = rgb { 174 49 56 }
+    color2 = rgb { 236 192 58 }
+    culture_definition = languedocien
+    religion_definition = catholic
+    is_historic = no
+}

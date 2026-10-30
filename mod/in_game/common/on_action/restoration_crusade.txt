@@ -1,0 +1,27 @@
+﻿# Append a separate action; vanilla on_winning_war effects still run.
+on_winning_war = {
+    on_actions = { restoration_crusade_won }
+}
+
+# Root is the winning country, after the peace terms have been carried out.
+restoration_crusade_won = {
+    trigger = {
+        scope:war = {
+            casus_belli ?= casus_belli:cb_crusade
+            is_an_attacker = scope:winner
+        }
+    }
+    effect = {
+        scope:winner = { restoration_crusade_reward = yes }
+        # Crusaders who fought beside the winner may also have taken the land.
+        scope:war = {
+            every_war_participant = {
+                limit = {
+                    NOT = { this = scope:winner }
+                    scope:war = { is_an_attacker = prev }
+                }
+                restoration_crusade_reward = yes
+            }
+        }
+    }
+}

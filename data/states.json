@@ -1,0 +1,20 @@
+[
+  {
+    "tag": "KOJ", "name": "the Kingdom of Jerusalem", "capital": "jerusalem",
+    "culture": "french", "rank": "rank_kingdom", "level": 3, "color": "map_KOJ",
+    "provinces": ["filastin_province"],
+    "locations": ["jerusalem", "acre", "beersheba", "gaza", "hebron", "jaffa", "majdal", "nablus", "safed"]
+  },
+  {
+    "tag": "CTP", "name": "the County of Tripoli", "capital": "tripoli_syria",
+    "culture": "languedocien", "rank": "rank_county", "level": 2, "color": "map_restoration_CTP",
+    "provinces": ["lebanon_province"],
+    "locations": ["tripoli_syria", "beirut", "sidon", "deir_qamar", "baalbek"]
+  },
+  {
+    "tag": "CAN", "name": "the Principality of Antioch", "capital": "antioch",
+    "culture": "norman", "rank": "rank_duchy", "level": 2, "color": "map_restoration_CAN",
+    "provinces": ["antakya_province", "latakia_province"],
+    "locations": ["antioch", "afrin", "arsuz", "artah", "idlib", "latakia", "baniyas", "jableh", "tartus"]
+  }
+]

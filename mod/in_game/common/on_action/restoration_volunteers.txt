@@ -1,0 +1,23 @@
+﻿# Append a separate action; retain vanilla on_war_declared effects.
+on_war_declared = {
+    on_actions = { restoration_volunteers_on_war_declared }
+}
+
+restoration_volunteers_on_war_declared = {
+    trigger = {
+        country_exists = c:KOJ
+        c:KOJ = {
+            restoration_volunteers_eligible = yes
+            NOT = { has_variable = restoration_volunteer_stage }
+            NOT = { has_variable = restoration_volunteer_cooldown }
+        }
+    }
+    effect = {
+        c:KOJ = { save_scope_as = restoration_country }
+        if = {
+            limit = { scope:war = { restoration_volunteers_qualifying_war = yes } }
+            scope:war = { save_scope_as = restoration_volunteer_chosen_war }
+            c:KOJ = { restoration_volunteers_begin_campaign = yes }
+        }
+    }
+}

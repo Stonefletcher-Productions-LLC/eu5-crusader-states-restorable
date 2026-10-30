@@ -1,0 +1,6 @@
+/dist/
+/validation.json
+/mod/release-manifest.json
+__pycache__/
+*.pyc
+*.log

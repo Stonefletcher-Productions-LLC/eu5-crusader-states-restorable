@@ -1,0 +1,14 @@
+{
+  "name": "[1.4] - Crusader States — Restorable",
+  "id": "alex.crusader_states_restorable",
+  "version": "0.1.0",
+  "game_id": "eu5",
+  "supported_game_version": "1.4.*",
+  "short_description": "Jerusalem, Tripoli and Antioch are gone in 1337, but a won crusade can restore them under Papal protection, or you can form them. Do not use with Crusader States — Restoration. Discord: discord.gg/9Y5GVYTxf",
+  "tags": [
+    "Alternative history",
+    "Gameplay"
+  ],
+  "relationships": [],
+  "game_custom_data": {}
+}

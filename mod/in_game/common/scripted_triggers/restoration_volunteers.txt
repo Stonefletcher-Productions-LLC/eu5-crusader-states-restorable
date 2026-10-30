@@ -1,0 +1,27 @@
+﻿# Country scope. Keep every entry point and delivery tied to the same relationship.
+restoration_volunteers_eligible = {
+    tag = KOJ
+    religion = religion:catholic
+    is_subject_type = restoration_crusader_state
+    is_subject_of = c:PAP
+}
+
+# War scope; caller must save Jerusalem as restoration_country first.
+restoration_volunteers_qualifying_war = {
+    is_a_defender = scope:restoration_country
+    any_war_participant = {
+        total_population > scope:restoration_country.total_population
+        # PREV is the war, THIS is this participant.
+        prev = { is_an_attacker = prev }
+    }
+}
+
+# Country scope. Membership in this exact war matters, not merely at_war.
+restoration_volunteers_campaign_active = {
+    restoration_volunteers_eligible = yes
+    has_variable = restoration_volunteer_war
+    any_current_war = {
+        this = root.var:restoration_volunteer_war
+        is_a_defender = root
+    }
+}

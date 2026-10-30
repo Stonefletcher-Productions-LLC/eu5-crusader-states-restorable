@@ -1,0 +1,113 @@
+﻿# Country scope. Do not remove the cooldown on peace or dependency cancellation.
+restoration_volunteers_clear_campaign = {
+    remove_variable = restoration_volunteer_war
+    remove_variable = restoration_volunteer_stage
+    remove_variable = restoration_volunteer_wait
+}
+
+# Country scope, with a chosen war saved by the caller.
+restoration_volunteers_begin_campaign = {
+    set_variable = { name = restoration_volunteer_war value = scope:restoration_volunteer_chosen_war }
+    set_variable = { name = restoration_volunteer_stage value = 1 }
+    set_variable = { name = restoration_volunteer_wait value = yes months = 3 }
+    set_variable = { name = restoration_volunteer_cooldown value = yes years = 15 }
+}
+
+# Monthly subject callback: ROOT is Jerusalem (documented in subject_types/readme).
+restoration_volunteers_monthly = {
+    save_scope_as = restoration_country
+    if = {
+        limit = {
+            has_variable = restoration_volunteer_stage
+            NOT = { restoration_volunteers_campaign_active = yes }
+        }
+        restoration_volunteers_clear_campaign = yes
+    }
+    if = {
+        limit = {
+            restoration_volunteers_eligible = yes
+            NOT = { has_variable = restoration_volunteer_stage }
+            NOT = { has_variable = restoration_volunteer_cooldown }
+            any_current_war = { restoration_volunteers_qualifying_war = yes }
+        }
+        # Also supports installing this feature into an ongoing defensive war.
+        random_current_war = {
+            limit = { restoration_volunteers_qualifying_war = yes }
+            save_scope_as = restoration_volunteer_chosen_war
+        }
+        restoration_volunteers_begin_campaign = yes
+    }
+    if = {
+        limit = {
+            restoration_volunteers_campaign_active = yes
+            NOT = { has_variable = restoration_volunteer_wait }
+            any_owned_location = { controller = root }
+        }
+        # Prefer the capital, otherwise any owned and self-controlled location.
+        if = {
+            limit = { capital = { owner = root controller = root } }
+            capital = { save_scope_as = restoration_volunteer_landing }
+        }
+        else = {
+            random_owned_location = {
+                limit = { controller = root }
+                save_scope_as = restoration_volunteer_landing
+            }
+        }
+        if = {
+            limit = { var:restoration_volunteer_stage = 1 }
+            scope:restoration_volunteer_landing = {
+                create_sub_unit = unit_type:a_footmen
+                create_sub_unit = unit_type:a_footmen
+                create_sub_unit = unit_type:restoration_crusader_knights
+            }
+            set_variable = { name = restoration_volunteer_stage value = 2 }
+            set_variable = { name = restoration_volunteer_wait value = yes months = 6 }
+            trigger_event_non_silently = { id = restoration_volunteers.1 }
+        }
+        else_if = {
+            limit = { var:restoration_volunteer_stage = 2 }
+            scope:restoration_volunteer_landing = {
+                create_sub_unit = unit_type:a_footmen
+                create_sub_unit = unit_type:a_footmen
+                create_sub_unit = unit_type:a_footmen
+                create_sub_unit = unit_type:a_footmen
+                create_sub_unit = unit_type:restoration_crusader_knights
+                create_sub_unit = unit_type:restoration_crusader_knights
+                create_sub_unit = unit_type:restoration_crusader_knights
+            }
+            set_variable = { name = restoration_volunteer_stage value = 3 }
+            set_variable = { name = restoration_volunteer_wait value = yes months = 6 }
+            trigger_event_non_silently = { id = restoration_volunteers.2 }
+        }
+        else_if = {
+            limit = { var:restoration_volunteer_stage = 3 }
+            restoration_volunteers_full_host = yes
+            set_variable = { name = restoration_volunteer_stage value = 4 }
+            set_variable = { name = restoration_volunteer_wait value = yes months = 12 }
+            trigger_event_non_silently = { id = restoration_volunteers.3 }
+        }
+        else_if = {
+            limit = { var:restoration_volunteer_stage = 4 }
+            restoration_volunteers_full_host = yes
+            set_variable = { name = restoration_volunteer_wait value = yes months = 12 }
+            trigger_event_non_silently = { id = restoration_volunteers.3 }
+        }
+    }
+}
+
+restoration_volunteers_full_host = {
+    scope:restoration_volunteer_landing = {
+        create_sub_unit = unit_type:a_footmen
+        create_sub_unit = unit_type:a_footmen
+        create_sub_unit = unit_type:a_footmen
+        create_sub_unit = unit_type:a_footmen
+        create_sub_unit = unit_type:a_footmen
+        create_sub_unit = unit_type:a_footmen
+        create_sub_unit = unit_type:restoration_crusader_knights
+        create_sub_unit = unit_type:restoration_crusader_knights
+        create_sub_unit = unit_type:restoration_crusader_knights
+        create_sub_unit = unit_type:restoration_crusader_knights
+        create_sub_unit = unit_type:restoration_crusader_knights
+    }
+}

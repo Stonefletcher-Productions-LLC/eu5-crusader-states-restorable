@@ -1,0 +1,12 @@
+﻿# Country scope: a Catholic country on the winning side of a crusade.
+# The veteran flag opens the restored-state formables for fifty years.
+restoration_crusade_reward = {
+    if = {
+        limit = { religion = religion:catholic }
+        set_variable = { name = restoration_crusade_veteran value = yes years = 50 }
+        if = {
+            limit = { restoration_can_release_any = yes }
+            trigger_event_non_silently = { id = restoration_crusade.1 }
+        }
+    }
+}

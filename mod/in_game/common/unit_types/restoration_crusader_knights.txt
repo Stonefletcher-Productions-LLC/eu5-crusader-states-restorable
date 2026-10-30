@@ -1,0 +1,16 @@
+﻿restoration_crusader_knights = {
+    copy_from = a_age_1_traditions_heavy_cavalry
+    is_special = yes
+    buildable = yes
+    country_potential = {
+        OR = { has_or_had_tag = KOJ has_or_had_tag = CTP has_or_had_tag = CAN }
+        religion = religion:catholic
+    }
+    strength_damage_taken = -0.15
+    morale_damage_taken = -0.15
+    maintenance_demand = heavy_cavalry_maintenance
+    construction_demand = heavy_cavalry_construction
+    upgrades_to = a_heavy_cavalrymen
+    combat = { grasslands = 0.10 wetlands = -0.10 }
+    gfx_tags = { crusader_tag heavy_tag }
+}

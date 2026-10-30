@@ -1,0 +1,37 @@
+﻿restoration_knights_of_the_sepulchre = {
+    age = age_1_traditions
+    potential = { has_or_had_tag = KOJ religion = religion:catholic }
+    icon = hun_bulwark_of_christianity
+    unlock_unit = restoration_crusader_knights
+    army_heavy_cavalry_power = 0.10
+}
+restoration_assizes_of_jerusalem = {
+    age = age_1_traditions
+    potential = { has_or_had_tag = KOJ }
+    icon = scholasticism
+    tolerance_heathen = 1
+    cultures_capacity = 1
+}
+restoration_hospices_of_the_pilgrim_road = {
+    age = age_1_traditions
+    potential = { has_or_had_tag = KOJ }
+    icon = hospital_advance
+    army_reinforce_efficiency = 0.15
+    monthly_legitimacy = 0.05
+}
+restoration_charter_of_acre = {
+    age = age_2_renaissance
+    potential = { has_or_had_tag = KOJ }
+    requires = renaissance_court
+    icon = catholic_sunday_schools
+    diplomatic_capacity = 1
+    navy_galley_power = 0.10
+}
+restoration_brothers_of_the_watch = {
+    age = age_2_renaissance
+    potential = { has_or_had_tag = KOJ }
+    requires = professional_armies_advance
+    icon = hun_bulwark_of_christianity
+    discipline = 0.025
+    monthly_army_tradition = 0.025
+}

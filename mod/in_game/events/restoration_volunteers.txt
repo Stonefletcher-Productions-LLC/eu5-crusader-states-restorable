@@ -1,0 +1,48 @@
+﻿namespace = restoration_volunteers
+
+# Troops arrive in the monthly effect before this notification is displayed.
+# Leaving the window open cannot postpone, repeat, or redeem a cancelled wave.
+restoration_volunteers.1 = {
+    type = country_event
+    title = restoration_volunteers.1.title
+    image = "gfx/interface/illustrations/event/restoration/papal_call.dds"
+    desc = restoration_volunteers.1.desc
+    outcome = positive
+    orphan = yes
+    trigger = { tag = KOJ }
+    illustration_tags = { 10 = exterior 10 = armed }
+    option = {
+        name = restoration_volunteers.welcome
+        custom_tooltip = restoration_volunteers.1.arrival
+    }
+}
+
+restoration_volunteers.2 = {
+    type = country_event
+    title = restoration_volunteers.2.title
+    image = "gfx/interface/illustrations/event/restoration/holy_orders_watch.dds"
+    desc = restoration_volunteers.2.desc
+    outcome = positive
+    orphan = yes
+    trigger = { tag = KOJ }
+    illustration_tags = { 10 = exterior 10 = armed }
+    option = {
+        name = restoration_volunteers.welcome
+        custom_tooltip = restoration_volunteers.2.arrival
+    }
+}
+
+restoration_volunteers.3 = {
+    type = country_event
+    title = restoration_volunteers.3.title
+    image = "gfx/interface/illustrations/event/restoration/holy_orders_reinforcements.dds"
+    desc = restoration_volunteers.3.desc
+    outcome = positive
+    orphan = yes
+    trigger = { tag = KOJ }
+    illustration_tags = { 10 = exterior 10 = armed }
+    option = {
+        name = restoration_volunteers.welcome
+        custom_tooltip = restoration_volunteers.3.arrival
+    }
+}

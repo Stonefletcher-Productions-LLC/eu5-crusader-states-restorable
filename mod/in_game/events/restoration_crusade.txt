@@ -1,0 +1,45 @@
+﻿namespace = restoration_crusade
+
+# Sent by on_winning_war to each Catholic victor of a crusade that now holds
+# the seat of Jerusalem, Tripoli or Antioch. Lands it does not hold stay as they are.
+restoration_crusade.1 = {
+    type = country_event
+    title = restoration_crusade.1.title
+    desc = restoration_crusade.1.desc
+    image = "gfx/interface/illustrations/event/restoration/chronicle_returned.dds"
+    outcome = positive
+    orphan = yes
+    trigger = {
+        religion = religion:catholic
+        restoration_can_release_any = yes
+    }
+    illustration_tags = { 10 = exterior 10 = armed }
+
+    option = {
+        name = restoration_crusade.1.a
+        trigger = { country_exists = c:PAP }
+        custom_tooltip = {
+            text = restoration_crusade.1.a.tt
+            restoration_restore_all_papal = yes
+        }
+        add_prestige = prestige_extreme_bonus
+        add_religious_influence_if_valid = { VALUE = religious_influence_extreme_bonus }
+        ai_chance = { factor = 3 }
+    }
+
+    option = {
+        name = restoration_crusade.1.b
+        trigger = { NOT = { tag = PAP } }
+        custom_tooltip = {
+            text = restoration_crusade.1.b.tt
+            restoration_restore_all_vassal = yes
+        }
+        ai_chance = { factor = 2 }
+    }
+
+    option = {
+        name = restoration_crusade.1.c
+        custom_tooltip = restoration_crusade.1.c.tt
+        ai_chance = { factor = 1 }
+    }
+}

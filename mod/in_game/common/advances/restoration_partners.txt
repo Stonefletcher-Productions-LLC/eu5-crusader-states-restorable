@@ -1,0 +1,41 @@
+﻿restoration_tripoli_harbour_charters = {
+    age = age_1_traditions
+    potential = { has_or_had_tag = CTP }
+    icon = scholasticism
+    merchant_power_from_maritime_modifier = 0.10
+}
+restoration_tripoli_coastal_brotherhood = {
+    age = age_1_traditions
+    potential = { has_or_had_tag = CTP religion = religion:catholic }
+    icon = hun_bulwark_of_christianity
+    unlock_unit = restoration_crusader_knights
+    navy_galley_power = 0.05
+}
+restoration_tripoli_arsenals = {
+    age = age_2_renaissance
+    potential = { has_or_had_tag = CTP }
+    requires = renaissance_court
+    icon = catholic_sunday_schools
+    navy_galley_maintenance_cost_modifier = -0.10
+}
+restoration_antioch_orontes_lances = {
+    age = age_1_traditions
+    potential = { has_or_had_tag = CAN religion = religion:catholic }
+    icon = hun_bulwark_of_christianity
+    unlock_unit = restoration_crusader_knights
+    army_heavy_cavalry_power = 0.05
+}
+restoration_antioch_compact_of_the_churches = {
+    age = age_1_traditions
+    potential = { has_or_had_tag = CAN }
+    icon = scholasticism
+    tolerance_heretic = 1
+    cultures_capacity = 1
+}
+restoration_antioch_frontier_castles = {
+    age = age_2_renaissance
+    potential = { has_or_had_tag = CAN }
+    requires = professional_armies_advance
+    icon = hun_bulwark_of_christianity
+    global_defensive = 0.10
+}

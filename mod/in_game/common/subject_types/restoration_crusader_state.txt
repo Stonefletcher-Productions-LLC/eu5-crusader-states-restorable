@@ -1,0 +1,45 @@
+﻿restoration_crusader_state = {
+    color = subject_tributary
+    level = 0
+    strength_vs_overlord = -0.25
+    annullment_favours_required = 20
+    counts_as_external = yes
+    visible = {
+        has_or_had_tag = PAP
+        scope:target = {
+            OR = { has_or_had_tag = KOJ has_or_had_tag = CTP has_or_had_tag = CAN has_or_had_tag = CYP }
+            religion = religion:catholic
+        }
+    }
+    creation_visible = { has_or_had_tag = PAP }
+    # Papal frontier: no gold, manpower, or sailor tribute.
+    has_overlords_ruler = no
+    has_limited_diplomacy = no
+    can_be_annexed = no
+    join_defensive_wars_always = { always = yes }
+    join_offensive_wars_always = { always = no }
+    join_offensive_wars_can_call = { always = yes }
+    allow_declaring_wars = { always = yes }
+    will_join_independence_wars = yes
+    overlord_can_cancel = yes
+    subject_can_cancel = no
+    can_change_rank = yes
+    can_change_heir_selection = yes
+    use_overlord_map_color = no
+    use_overlord_map_name = no
+    diplomatic_capacity_cost_scale = 0.2
+    institution_spread_to_subject = monthly_institution_spread_weak
+    institution_spread_to_overlord = monthly_institution_spread_weak
+    on_monthly = { restoration_volunteers_monthly = yes }
+    on_disable = { restoration_volunteers_clear_campaign = yes }
+    # Relationship-owned bonuses: the engine removes these with the dependency.
+    # Country scope covers all current and future owned fort locations.
+    subject_modifier = {
+        # Papal Covenant: loyalty lasts only while this dependency exists.
+        loyalty_to_overlord = 25
+        monthly_legitimacy = 0.05
+        global_defensive = 0.25
+        global_garrison_size_modifier = 0.20
+        fort_maintenance_efficiency = 0.25
+    }
+}

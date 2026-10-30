@@ -1,0 +1,31 @@
+[h1][1.4] - Crusader States — Restorable[/h1]
+
+[h2]Join the Discord[/h2]
+News, bug reports and playtests: [b][url=https://discord.gg/9Y5GVYTxf]discord.gg/9Y5GVYTxf[/url][/b]. Website: [url=https://stonefletcher.com]stonefletcher.com[/url]. Made by [b]Stonefletcher Productions LLC[/b].
+
+[h2]The crusader states, won back[/h2]
+The Kingdom of Jerusalem, the County of Tripoli and the Principality of Antioch do [b]not[/b] exist in 1337. The map starts exactly as in vanilla. These crowns return only if Catholic Christendom wins them back.
+
+This is a variant of [b]Crusader States — Restoration[/b], where the three states already exist at the start. [b]Use one or the other, never both.[/b]
+
+[h2]Win a crusade[/h2]
+When a crusade ends in victory, every Catholic country on the winning side becomes a crusade veteran for 50 years. Any of them that holds the seat of Jerusalem, Tripoli or Antioch gets the event [i]The Crowns of Outremer[/i]:
+[list]
+[*][b]Restore them under the Holy See.[/b] Each state whose seat you hold rises from the lands you hold there as a Catholic monarchy and a Crusader State of the Papal States. You gain prestige and religious influence.
+[*][b]Restore them as your vassals.[/b] The same, but they serve you.
+[*][b]Keep the land.[/b] You can still form them yourself later.
+[/list]
+
+[h2]Or form them[/h2]
+Crusade veterans can form each state: own Jerusalem, Tripoli or Antioch and 75% of its land (Filastin; Lebanon; Antakya and Latakia). Catholic military orders can form Tripoli and Antioch too, and vanilla's own Jerusalem formable still works.
+
+[h2]What the restored states get[/h2]
+[list]
+[*]The Crusader State bond with Rome: no tribute, +25 loyalty, stronger and cheaper forts.
+[*]Crusader Knights heavy cavalry.
+[*]Unique advances for each state, plus vanilla Jerusalem's own.
+[*]Crusader volunteers for a Papal Jerusalem attacked by a larger enemy.
+[*]Their own flags and map colours.
+[/list]
+
+Start a new campaign after enabling the mod. For EU5 1.4.
