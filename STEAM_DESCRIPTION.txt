@@ -3,10 +3,14 @@
 [h2]Join the Discord[/h2]
 News, bug reports and playtests: [b][url=https://discord.gg/9Y5GVYTxf]discord.gg/9Y5GVYTxf[/url][/b]. Website: [url=https://stonefletcher.com]stonefletcher.com[/url]. Made by [b]Stonefletcher Productions LLC[/b].
 
+[img]https://raw.githubusercontent.com/Stonefletcher-Productions-LLC/eu5-crusader-states-restorable/main/art/workshop/jerusalem.jpg[/img]
+
 [h2]The crusader states, won back[/h2]
 The Kingdom of Jerusalem, the County of Tripoli and the Principality of Antioch do [b]not[/b] exist in 1337. The map starts exactly as in vanilla. These crowns return only if Catholic Christendom wins them back.
 
 This is a variant of [b]Crusader States — Restoration[/b], where the three states already exist at the start. [b]Use one or the other, never both.[/b]
+
+[img]https://raw.githubusercontent.com/Stonefletcher-Productions-LLC/eu5-crusader-states-restorable/main/art/workshop/three_crowns.jpg[/img]
 
 [h2]Win a crusade[/h2]
 When a crusade ends in victory, every Catholic country on the winning side becomes a crusade veteran for 50 years. Any of them that holds the seat of Jerusalem, Tripoli or Antioch gets the event [i]The Crowns of Outremer[/i]:
