@@ -23,6 +23,8 @@ When a crusade ends in victory, every Catholic country on the winning side becom
 [h2]Or form them[/h2]
 Crusade veterans can form each state: own Jerusalem, Tripoli or Antioch and 75% of its land (Filastin; Lebanon; Antakya and Latakia). Catholic military orders can form Tripoli and Antioch too, and vanilla's own Jerusalem formable still works.
 
+[img]https://raw.githubusercontent.com/Stonefletcher-Productions-LLC/eu5-crusader-states-restorable/main/art/workshop/knights_ride_out.jpg[/img]
+
 [h2]What the restored states get[/h2]
 [list]
 [*]The Crusader State bond with Rome: no tribute, +25 loyalty, stronger and cheaper forts.
